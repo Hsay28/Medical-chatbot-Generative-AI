@@ -18,9 +18,6 @@ load_dotenv()
 PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
 OPENAI_API_KEY=os.environ.get('OPENAI_API_KEY')
 
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-
 embeddings = download_hugging_face_embeddings()
 
 index_name = "medical-chatbot"
